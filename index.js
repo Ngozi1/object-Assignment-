@@ -11,9 +11,9 @@ function instagramPost(handleOfAuthor, content, imageLink, numberOfViews, number
 
 // QUESTION 2
 
-const instagramPost1 = new instagramPost('itabanaBlessing', 'politics', 'abcdef', 30, 19);
+const instagramPost1 = new instagramPost('itabanaBlessing', 'politics', 'https://www.instagram.com/p/CpEpXWUsaBA/?igshid=YmMyMTA2M2Y=', 30, 19);
 
-const instagramPost2 = new instagramPost('peaceItimi', 'selfworth', 'abcdefh', 2377, 2300);
+const instagramPost2 = new instagramPost('peaceItimi', 'selfworth', 'https://www.instagram.com/p/CfFKnTCjsJ6/?igshid=YmMyMTA2M2Y=', 2377, 2300);
 
 console.log(instagramPost1);
 console.log(instagramPost2);
@@ -31,15 +31,16 @@ console.log(musa)
 
 // QUESTION 3B
 
-// function createJambScore(ENG,GOVT,LIT,CRK){
-//     this.eng = ENG;
-//     this.govt = GOVT;
-//     this.lit = LIT;
-//     this.crk = CRK;
-// }
+  function createJambScore(ENG,GOVT,LIT,CRK){
+     this.eng = ENG;
+     this.govt = GOVT;
+     this.lit = LIT;
+     this.crk = CRK;
+ }
+ console.log(musa)
 
-// musa.createJambScore = jambScore (70,85,82,94);
-// console.log(musa)
+ musa.createJambScore = createJambScore(70,85,82,94);
+ console.log(musa.createJambScore)
 
 // QUESTION 4
 
@@ -79,3 +80,16 @@ console.log(fourthMovie);
 
 
 // question 5
+
+const presidentialCandidates = {
+    AAC: 'Omoyele Sowore',
+    ACCORD: 'Christopher Imumolen',
+    APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar',
+};
+
+for (const key of Object.keys(presidentialCandidates)){
+    console.log(presidentialCandidates[key] + " " + "is the presidential candidate of " + (key)); 
+}
