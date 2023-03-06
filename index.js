@@ -21,9 +21,9 @@ console.log(instagramPost2);
 // QUESTION 3A
 
 function createPerson(name, age, location){
-    this.name = name;
-    this.age = age;
-    this.location = location;
+    name : name;
+    age : age;
+    location : location;
 }
 
 const musa = new createPerson('Musa Dawodu', 19, 'Lekki');
@@ -32,15 +32,13 @@ console.log(musa)
 // QUESTION 3B
 
   function createJambScore(ENG,GOVT,LIT,CRK){
-     this.eng = ENG;
-     this.govt = GOVT;
-     this.lit = LIT;
-     this.crk = CRK;
+     ENG : ENG;
+     GOVT : GOVT;
+     LIT : LIT;
+     CRK : CRK;
  }
- console.log(musa)
-
- musa.createJambScore = createJambScore(70,85,82,94);
- console.log(musa.createJambScore)
+ const jambScore = new createJambScore('70', '85', '82', '94');
+ console.log(musa.jambScore)
 
 // QUESTION 4
 
