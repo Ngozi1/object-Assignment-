@@ -21,24 +21,29 @@ console.log(instagramPost2);
 // QUESTION 3A
 
 function createPerson(name, age, location){
-    name : name;
-    age : age;
-    location : location;
+    return{
+    name : name,
+    age : age,
+    location : location
+}
 }
 
-const musa = new createPerson('Musa Dawodu', 19, 'Lekki');
+const musa =  createPerson('Musa Dawodu', 19, 'Lekki');
 console.log(musa)
 
 // QUESTION 3B
 
   function createJambScore(ENG,GOVT,LIT,CRK){
-     ENG : ENG;
-     GOVT : GOVT;
-     LIT : LIT;
-     CRK : CRK;
+    return{
+     ENG : ENG,
+     GOVT : GOVT,
+     LIT : LIT,
+     CRK : CRK
  }
- const jambScore = new createJambScore('70', '85', '82', '94');
- console.log(musa.jambScore)
+}
+ const jambScore = createJambScore('70', '85', '82', '94');
+ musa.jambScore = jambScore;
+ console.log(musa)
 
 // QUESTION 4
 
